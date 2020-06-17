@@ -100,7 +100,7 @@ def copy_to_bids(runs, img_type, this_sess, fmap_apply = []):
 def update_intended_for(fpath, fname, fmap_apply):
     intended_for = []
     for i in range(0,len(fmap_apply)):
-	if fname == fmap_apply[i][0]:
+        if fname == fmap_apply[i][0]:
             intended_for = fmap_apply[i][1:]
             with open(fpath, 'r+') as outfile:
                 data = json.load(outfile)
